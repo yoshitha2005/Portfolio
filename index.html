@@ -1,0 +1,436 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        /* Existing CSS */
+        .sidebar {
+            width: 25%;
+            height: 200vh;
+            background-image: url('https://img.freepik.com/premium-vector/line-abstract-geometric-background_393744-280.jpg?semt=ais_hybrid');
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            color: white;
+        }
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.home {
+    flex: 1;
+    max-width: 50%;
+    padding-right: 0px;
+}
+
+.homesub1 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    max-width: 50%;
+}
+
+.homesub1 img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+        .whole {
+            display: flex;
+            flex-direction: column;
+            margin-left: 35%;
+            width: 75%;
+            margin-right: 20%;
+        }
+
+        
+
+         .education {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+.edusub1, .edusub2 {
+    flex: 1;
+    max-width: 30%;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.section2 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+
+/* Ensure they stack side by side on larger screens */
+@media (max-width: 768px) {
+    .section2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .edusub1, .edusub2 {
+        max-width: 80%;
+    }
+}
+
+
+        .contact {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .social-icon-img {
+            height: 30px;
+            padding: 10px;
+        }
+
+        .navbar-left {
+            padding-right: 50px;
+        }
+
+        .logo-image {
+            height: 90px;
+            width: 90px;
+            position: fixed;
+            right: 20px;
+        }
+
+        .animated-text {
+            font-size: 2.5em;
+            font-weight: bold;
+            text-align: center;
+            padding-top: 150px;
+            margin-top: 100px;
+         
+         
+            animation: typing 3s steps(30, end);
+        }
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cG9ydGZvbGlvJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D');
+        }
+
+        /* Responsive CSS */
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+                padding-bottom: 20px;
+            }
+
+            .whole {
+                margin-left: 0;
+                width: 100%;
+                padding-top: 20px;
+            }
+
+            .section {
+                flex-direction: column;
+                text-align: center;
+            }
+ 
+
+
+            .home, .education, .edusub1, .edusub2 {
+                padding: 10px;
+            }
+
+            .logo-image {
+                position: static;
+                margin-bottom: 20px;
+            }
+
+            .animated-text {
+                font-size: 2em;
+                padding-top: 50px;
+                margin-top: 50px;
+            }
+
+            .contact {
+                flex-direction: column;
+            }
+
+            .social-icon-img {
+                margin: 5px;
+            }
+
+            .navbar-left {
+                padding-right: 0;
+            }
+
+            .homesub1 img, .projsub1 img, .projsub2 img, .projsub3 img {
+                width: 100%;
+                height: auto;
+                padding: 0;
+                margin-top: 20px;
+            }
+
+            .Skills img {
+                margin: 10px;
+            }
+
+            .Certifications img {
+                margin: 10px;
+            }
+
+            .Projects1, .Projects2, .Projects3 {
+                margin: 10px;
+            }
+
+            .contact2 {
+                text-align: center;
+            }
+
+            .contact2 a {
+                margin: 5px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .animated-text {
+                font-size: 1.5em;
+            }
+
+            .sidebar img {
+                padding-left: 20px;
+                padding-top: 20px;
+            }
+
+            .sidebar p {
+                padding-left: 20px;
+            }
+
+            .sidebar ul a {
+                padding-left: 20px;
+            }
+
+            .home p, .education p, .edusub1 p, .edusub2 p {
+                margin-left: 10px;
+            }
+
+            .Skills img, .Certifications img {
+                margin: 5px;
+            }
+
+            .Projects1, .Projects2, .Projects3 {
+                margin: 5px;
+            }
+
+            .contact2 a {
+                margin: 2px;
+            }
+        }
+
+        /* Updated Skills Section CSS */
+        .Skills {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            gap: 10px;
+            margin: 0 auto;
+            max-width: 100%;
+            padding: 10px;
+            overflow-x: auto;
+        }
+
+        .Skills img {
+            width: 60px;
+            height: 60px;
+        }
+
+        /* Projects Section Alignment */
+        .Projects1, .Projects2, .Projects3 {
+            flex: 1;
+            max-width: 500px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .projsub1, .projsub2, .projsub3 {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .projsub1 img, .projsub2 img, .projsub3 img {
+            max-width: 100%;
+            height: auto;
+            padding: 0 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="sidebar">
+    <img style="height: 110px; width: 110px; padding-left: 100px; padding-top: 50px;" src="https://res.cloudinary.com/dbc4ypxpq/image/upload/v1740668069/pink_dress_round_qnmf4r.png">
+    <p style="font-size: 20px; padding-left: 75px;"><b>Yoshitha Kothapalli</b></p>
+    <ul>
+        <a style="display: flex; padding-bottom: 10%; padding-left:60px; font-size: 25px; color: white;" href="#home">Home</a>
+        <a style="display: flex; padding-bottom: 10%; padding-left:60px; font-size: 25px; color: white;" href="#edu">Education</a>
+        <a style="display: flex; padding-bottom: 10%; padding-left:60px; font-size: 25px; color: white;" href="#skills">Skills</a>
+        <a style="display: flex; padding-bottom: 10%; padding-left:60px; font-size: 25px; color: white;" href="#cert">Certifications</a>
+        <a style="display: flex; padding-bottom: 10%; padding-left:60px; font-size: 25px; color: white;" href="#pro">Projects</a>
+        <a style="display: flex; padding-bottom: 10%; padding-left:60px; font-size: 25px; color: white;" href="#cont">Contact</a>
+    </ul>
+</div>
+
+<div class="whole">
+    <!-- Home Section -->
+    <div class="section">
+        
+        <div class="home" id="home">
+            <h1 class="animated-text">Kothapalli Yoshitha Devi</h1>
+            <p style="margin-left: 10px;">Hello! I'm Yoshitha, a dedicated B.Tech student at Sasi College, where I'm honing my skills in computer science and software development. With a strong foundation in programming languages like C, Python, and Java, I have a passion for solving complex problems through code.</p>
+            <a href="https://drive.google.com/file/d/1zCYpWj3K4Gt4PWxz6fM2YjlFbiUfhml2/view?usp=sharing" target="_blank" style="margin-left: 250px;">View Resume</a>
+        </div>
+        <div class="homesub1">
+            <img src="https://res.cloudinary.com/dbc4ypxpq/image/upload/v1740729842/mini_bg_removed_2_nrgvpd.png" alt="my logo" style="margin-top: 50px;">
+        </div>
+    </div>
+
+    <!-- Education Section -->
+    <h1 style="text-align: center; margin-top: 150px;" id="edu">Education</h1>
+    <div class="section2">
+        <div class="edusub1">
+            <p style=""><b>Bachelor of Technology in Computer Science</b></p>
+            <p style="">Sasi Institute of Technology & Engineering</p>
+            <p style="">Year: 2022 - 2026</p>
+            <p style="">Cgpa: 8.8</p>
+        </div>
+        <div class="edusub1">
+            <p style="margin-top: 0px;"><b>Intermediate in Mpc</b></p>
+            <p style="padding-top: 15px;">Sasi Junior College</p>
+            <p style="padding-top: 15px;">Year: 2020 - 2022</p>
+            <p style="padding-top: 15px;">Cgpa: 9.6</p>
+        </div>
+        <div class="edusub2">
+            <p style="margin-top: 0px;"><b>Secondary Education</b></p>
+            <p style="padding-top: 15px;">Montessori School</p>
+            <p style="padding-top: 15px;">Year: 2019-2020</p>
+            <p style="padding-top: 15px;">Cgpa: 9.6</p>
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+    <h1 style="text-align: center; margin-top: 50px;" id="skills">Skills</h1>
+    <div class="section">
+        <div class="Skills">
+            <img src="https://e7.pngegg.com/pngimages/185/866/png-clipart-html-logo-html-web-design-scalable-graphics-world-wide-web-markup-language-html5-icon-hd-miscellaneous-angle.png" alt="HTML">
+            <img src="https://w7.pngwing.com/pngs/167/148/png-transparent-microsoft-azure-sql-database-microsoft-sql-server-database-blue-text-logo.png" alt="SQL">
+            <img src="https://banner2.cleanpng.com/20180412/kye/avffc0w7m.webp" alt="CSS">
+            <img src="https://img.lovepik.com/element/45008/3801.png_860.png" alt="Python">
+            <img src="https://png.pngtree.com/png-clipart/20190516/original/pngtree-microsoft-excel-logo-icon-png-image_3588803.jpg" alt="Excel">
+            <img src="https://icon2.cleanpng.com/20180429/fpq/avtv0vick.webp" alt="Java">
+        </div>
+    </div>
+
+    <!-- Certifications Section -->
+    <h1 style="text-align: center; margin-top: 150px;" id="cert">Certifications</h1>
+    <div class="section">
+        <div class="Certifications">
+            <a href="https://drive.google.com/file/d/1ctLNjM93S_Swa8AH7qb1CIbTNWuM1KLu/view?usp=sharin" target="_blank">
+                <img src="https://res.cloudinary.com/dbc4ypxpq/image/upload/v1740678083/html_certf_rbmd1q.png" alt="Certificate Thumbnail" class="certificate" style="width:100px; height: 100px; margin-left: 100px; margin-top: 40px;">
+            </a>
+            <a href="https://drive.google.com/file/d/1BgCo8RCH0sjGYvT2odBfRNtROyUk_4NV/view?usp=sharing" target="_blank">
+                <img src="https://res.cloudinary.com/dbc4ypxpq/image/upload/v1740678083/html_certf_rbmd1q.png" alt="Certificate Thumbnail" class="certificate" style="width:100px; height: 100px; margin-left: 40px;">
+            </a>
+            <a href="https://drive.google.com/file/d/1ZqJL7fLTEZPUCZGtFzeZM1RqAmPCu2D3/view?usp=sharing" target="_blank">
+                <img src="https://res.cloudinary.com/dbc4ypxpq/image/upload/v1740678083/html_certf_rbmd1q.png" alt="Certificate Thumbnail" class="certificate" style="width:100px; height: 100px; margin-left: 40px;">
+            </a>
+            <a href="https://drive.google.com/file/d/1jXw-3je3z6N9qdp0UAiTMDAvAvVFP9Mu/view?usp=sharing" target="_blank">
+                <img src="https://res.cloudinary.com/dbc4ypxpq/image/upload/v1740678083/html_certf_rbmd1q.png" alt="Certificate Thumbnail" class="certificate" style="width:100px; height: 100px; margin-left: 40px;">
+            </a>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <h1 style="text-align: center; margin-top: 150px;" id="pro">Projects</h1>
+    <div class="section">
+        <div class="Projects1">
+            <h3>Smart India Hackathon.</h3>
+            <p>Developed a presentation for Women Safety Analytics Device on person detection and gender classification system. Researched on machine learning models to detect safety threats for women in isolated areas.</p>
+            <a href="https://docs.google.com/presentation/d/1k5ON3S8tvLCLpuRZA-Ez_KeAW7Zfm5Yl/edit?usp=sharing&ouid=117287910688889527268&rtpof=true&sd=true" target="_blank">Try it here</a>
+        </div>
+        <div class="projsub1">
+            <img src="https://res.cloudinary.com/dbc4ypxpq/image/upload/v1740722778/sih_gwjlsv.png" alt="my logo">
+        </div>
+    </div>
+    <div class="section">
+        <div class="projsub2">
+            <img src="https://res.cloudinary.com/dbc4ypxpq/image/upload/v1740726737/tripage_evhhz4.png" alt="my logo">
+        </div>
+        <div class="Projects2">
+            <h3>Tribute Page.</h3>
+            <p>Created a tribute page dedicated to Draupadi Murmu. The page features a clean and responsive design, with structured content and visuals to enhance user engagement. Implemented HTML and CSS for layout and styling, ensuring accessibility and readability.</p>
+            <a href="https://yoshitha2005.github.io/Tribute/" target="_blank">Try it here</a>
+        </div>
+    </div>
+    <div class="section">
+        <div class="Projects3">
+            <h3>Data Analytics Job Simulation</h3>
+            <p>Successfully completed the Deloitte Data Analytics Virtual Internship/Experience, gaining hands-on exposure to real-world business challenges. This simulation not only refined my technical expertise but also boosted my confidence in transforming data into meaningful narratives for strategic decision-making.</p>
+            <a href="https://drive.google.com/file/d/1s8tRmx0xjMVTRv6A8u9Lkz8ui70IOxim/view?usp=sharing" target="_blank">Try it here</a>
+        </div>
+        <div class="projsub3">
+            <img src="https://res.cloudinary.com/dbc4ypxpq/image/upload/v1740727843/deo_q9bqb6.png" alt="my logo">
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <h1 style="text-align: center; margin-top: 100px;" id="cont">Contact</h1>
+    <div class="section">
+        <div class="contact">
+            <p>Yoshitha.K</p>
+            <p style="padding-left: 12px; padding-right: 12px;">|</p>
+            <p>+91 9085433492</p>
+            <p style="padding-left: 12px; padding-right: 12px;">|</p>
+            <p>kothapalliyoshitha@gmail.com</p>
+        </div>
+    </div>
+    <div class="contact2">
+        <a href="https://www.instagram.com/_bubbly_bubble00/">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png" class="social-icon-img" style="margin-left: 280px;">
+        </a>
+        <a href="https://www.linkedin.com/in/yoshitha-kothapalli-070520280/">
+      
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" class="social-icon-img">
+        </a>
+    </a>
+    <a href="https://github.com/yoshitha2005">
+        <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" class="social-icon-img">
+    </a>
+                </div>
+</div>
+        
+
+</body>
+</html>
+   
